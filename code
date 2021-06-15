@@ -1,0 +1,10 @@
+import pyqrcode
+
+# String which represent the QR code
+s = "https://github.com/Nishna-Amudhapuram"
+
+# Generate QR code
+url = pyqrcode.create(s)
+
+# create and save the png file naming ".png"
+url.svg("me.svg", scale=8)
